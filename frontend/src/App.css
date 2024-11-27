@@ -1,0 +1,142 @@
+body {
+  background: url('../public/fundo.jpg') no-repeat center center fixed; /* Atualizado para referência correta ao fundo */
+  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex; /* Centraliza o conteúdo no corpo */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante altura total da tela */
+}
+
+.app-container {
+  min-width: 300px; /* Garantia de largura mínima */
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/* Estilo para os títulos */
+h2,
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilo do input */
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Caixa de seleção com estilo atualizado */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+.checkbox-container .editspan{
+  font-size: 12px;
+  width: 50px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* Estilo para cada tarefa */
+.task-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item .actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botão Geral */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Botão "Adicionar Tarefa" */
+button.add-task {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+button.add-task:hover {
+  background-color: #218838; /* Verde escuro */
+}
+
+/* Botão "Editar" */
+button.edit-task {
+  background-color: #ffc107; /* Amarelo */
+  color: black;
+  margin-left: 10px;
+}
+
+button.edit-task:hover {
+  background-color: #e0a800; /* Amarelo mais escuro */
+}
+
+/* Botão "Excluir" */
+button.delete-task {
+  background-color: #dc3545; /* Vermelho */
+  color: black;
+}
+
+button.delete-task:hover {
+  background-color: #c82333; /* Vermelho escuro */
+}
+
+/* Tarefas Concluídas */
+span.completed {
+  color: #28a745; /* Verde */
+}
+
+/* Tarefas Pendentes */
+span.pending {
+  color: #dc3545; /* Vermelho */
+}
+
+/* Botão "Salvar" */
+button.save-task {
+  background-color: #28a745; /* Verde */
+  color: white;
+  margin-right: 10px;
+}
+
+button.save-task:hover {
+  background-color: #218838; /* Verde mais escuro */
+}
+
+/* Botão "Cancelar" */
+button.cancel-task {
+  background-color: #e0e0e0; /* Cinza Claro */
+  color: black;
+}
+
+button.cancel-task:hover {
+  background-color: #c6c6c6; /* Cinza Médio */
+}
+
